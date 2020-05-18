@@ -30,18 +30,16 @@
     <activity android:name=".view.activity.AdminActivity" />
     <activity android:name=".view.activity.StudentLoginActivity" />
     <activity android:name=".view.activity.TeacherLoginActivity" />
-    <activity android:name=".view.activity.AdminSignUpActivity" >
+    <activity android:name=".view.activity.AdminSignUpActivity" />
+    <activity android:name=".view.activity.AdminLoginActivity" />
+    <activity
+        android:name=".view.activity.SplashActivity"
+        android:theme="@style/AppTheme.Launcher">
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
 
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
-    </activity>
-    <activity android:name=".view.activity.AdminLoginActivity" />
-    <activity
-        android:name=".view.activity.SplashActivity"
-        android:theme="@style/AppTheme.Launcher">
-
     </activity>
     <activity android:name=".view.activity.IntroActivity" />
     <activity android:name=".view.activity.MainActivity" />

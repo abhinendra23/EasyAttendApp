@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -30,6 +31,7 @@ public class AdminSignUpActivity extends AppCompatActivity {
     private DatabaseReference adminRef;
     private ProgressBar adminSignUPPB;
     private LinearLayout adminSignUPLL;
+    private TextView signinbtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,6 +51,13 @@ public class AdminSignUpActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                signUp();
+            }
+        });
+        signinbtn=(TextView)findViewById(R.id.signinbtn);
+        signinbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(AdminSignUpActivity.this, AdminLoginActivity.class));
             }
         });
 
