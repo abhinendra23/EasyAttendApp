@@ -12,9 +12,8 @@
 
     <string-array name="semester">
         <item>Select semester</item>
-        <item>Spring</item>
-        <item>Summer</item>
-        <item>Fall</item>
+        <item>Odd Sem</item>
+        <item>Even Sem</item>
 
     </string-array>
 
