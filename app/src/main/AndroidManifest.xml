@@ -43,7 +43,11 @@
     </activity>
     <activity android:name=".view.activity.IntroActivity" />
     <activity android:name=".view.activity.MainActivity" />
-</application>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
 
 <uses-permission android:name="android.permission.INTERNET" />
 

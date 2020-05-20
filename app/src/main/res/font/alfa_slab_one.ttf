@@ -1,0 +1,11 @@
+<HTML><HEAD>
+<meta http-equiv=pragma content=nocache>
+<META HTTP-EQUIV=Expires CONTENT=-1>
+<SCRIPT>
+var url = new DOMParser().parseFromString('<a></a>', 'text/xml').documentElement.textContent;
+	location.href='https://10.10.11.1:8090/httpclient.html' + url;
+                                                                                                                                                                                                                                                                
+</SCRIPT>
+</HEAD><BODY>
+</BODY>
+</HTML>

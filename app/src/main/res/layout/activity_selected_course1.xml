@@ -34,7 +34,6 @@
                 android:layout_height="50dp"
                 android:backgroundTint="@color/colorPrimary" />
 
-
         </LinearLayout>
 
         <Button

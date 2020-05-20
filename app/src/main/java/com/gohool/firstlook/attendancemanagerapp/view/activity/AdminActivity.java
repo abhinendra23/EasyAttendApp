@@ -29,6 +29,7 @@ public class AdminActivity extends AppCompatActivity {
 
         admin_nav_drawer=findViewById(R.id.admin_nav_drawer_id);
         admin_nav_view=findViewById(R.id.admin_nav_view_id);
+        admin_nav_view.setItemIconTintList(null);
 
         ActionBarDrawerToggle actionBarDrawerToggle = new ActionBarDrawerToggle(this, admin_nav_drawer, admin_toolbar,R.string.nav_drawer_open, R.string.nav_drawer_close);
 

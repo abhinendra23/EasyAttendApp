@@ -45,7 +45,8 @@
                     android:background="@drawable/ovalsahpe"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/admin" />
+                    android:src="@drawable/admin1"
+                     />
 
 
 

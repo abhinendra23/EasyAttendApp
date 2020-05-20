@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -29,6 +30,7 @@ public class AdminLoginActivity extends AppCompatActivity {
     private FirebaseAuth auth;
     private SaveUser saveUser=new SaveUser();
     private String femail,fpassword;
+    private TextView cur_name,cur_email;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,7 +41,8 @@ public class AdminLoginActivity extends AppCompatActivity {
         adminLogInBtn=findViewById(R.id.adminLoginBtn);
 
         auth= FirebaseAuth.getInstance();
-
+        cur_email=findViewById((R.id.header_email));
+        cur_name=findViewById(R.id.header_name);
 
         adminLogInBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,6 +76,8 @@ public class AdminLoginActivity extends AppCompatActivity {
                                 SweetToast.success(getApplicationContext(),"Login successfully");
                                 startActivity(new Intent(AdminLoginActivity.this,AddCourseActivity.class));
                                 saveUser.admin_saveData(getApplicationContext(),true);
+                                cur_name.setText(admin.getName());
+                                cur_email.setText(admin.getEmail());
                                 finish();
 
                             }else {

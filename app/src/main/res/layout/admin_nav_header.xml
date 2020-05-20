@@ -19,7 +19,7 @@
         android:paddingBottom="15dp">
 
         <ImageView
-            app:srcCompat="@drawable/ic_logo"
+            android:src="@drawable/profilepicdemo"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_marginBottom="3dp"
@@ -27,21 +27,21 @@
 
         <TextView
             android:layout_marginTop="10dp"
-            android:id="@+id/headerName"
+            android:id="@+id/header_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="User Name"
             android:textColor="@color/colorDeepGray"
-            android:textSize="20sp" />
+            android:textSize="22sp" />
 
         <TextView
-            android:id="@+id/emailText_id"
+            android:id="@+id/header_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="3dp"
             android:text="Email"
             android:textColor="@color/colorDeepGray"
-            android:textSize="13sp"
+            android:textSize="17sp"
 
             />
 

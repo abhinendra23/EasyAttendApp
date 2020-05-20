@@ -5,11 +5,51 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:weightSum="4"
+    android:background="@color/bkcolor"
     android:orientation="vertical"
-    android:gravity="center"
     android:padding="10dp"
     tools:context=".view.fragment.AdminHomeFragment">
-    
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1.6"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+
+            app:cardCornerRadius="20dp"
+            android:layout_margin="10dp"
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/select_choice" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gfs_didot"
+                    android:text="Select Your Choice"
+                    android:textColor="#25CDE2"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.502"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView"
+                    app:layout_constraintVertical_bias="1.0"></TextView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
     <LinearLayout
         android:layout_marginTop="20dp"
         android:weightSum="2"
@@ -20,12 +60,13 @@
         <LinearLayout
             android:gravity="center"
             android:layout_weight="1"
+
             android:layout_width="0dp"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
             
             <androidx.cardview.widget.CardView
-                android:backgroundTint="#EEF0FA"
-                app:cardCornerRadius="10dp"
+
+                app:cardCornerRadius="5dp"
                 android:id="@+id/studentListCV"
                 android:layout_width="150dp"
                 android:layout_height="150dp">
@@ -33,7 +74,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:gravity="center"
+                    android:gravity="center_horizontal|center_vertical"
                     android:orientation="vertical"
                     android:padding="10dp">
 
@@ -58,7 +99,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:text="Student List"
-                        android:textColor="@color/colorPrimary"
+                        android:textColor="@color/colorPrimaryDark"
                         android:textSize="15sp" />
 
 
@@ -76,7 +117,7 @@
             android:layout_height="match_parent">
 
             <androidx.cardview.widget.CardView
-                android:backgroundTint="#EEF0FA"
+
                 app:cardCornerRadius="5dp"
                 android:id="@+id/teacherListCV"
                 android:layout_width="150dp"
@@ -105,7 +146,7 @@
 
                     </LinearLayout>-->
                     <TextView
-                        android:textColor="@color/colorPrimary"
+                        android:textColor="@color/colorPrimaryDark"
                         android:textSize="15sp"
                         android:layout_marginTop="5dp"
                         android:text="Teacher List"
@@ -139,7 +180,7 @@
 
             <androidx.cardview.widget.CardView
                 app:cardCornerRadius="5dp"
-                android:backgroundTint="#EEF0FA"
+
                 android:id="@+id/courseListCV"
                 android:layout_width="150dp"
                 android:layout_height="150dp">
@@ -168,7 +209,7 @@
                     </LinearLayout>
 -->
                     <TextView
-                        android:textColor="@color/colorPrimary"
+                        android:textColor="@color/colorPrimaryDark"
                         android:textSize="15sp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

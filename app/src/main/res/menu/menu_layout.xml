@@ -4,26 +4,32 @@
     <item
         android:id="@+id/menu_item_home"
         android:title="Home"
+         android:icon="@drawable/home"
+        android:iconTint="#00ffffff"
         android:checkable="true"
 
         />
     <item
         android:id="@+id/menu_item_profile"
         android:checkable="true"
+        android:icon="@drawable/avatar"
         android:title="Profile"/>
     <item
             android:id="@+id/menu_item_change_password"
             android:checkable="true"
+            android:icon="@drawable/change_password"
             android:title="Change Password"/>
   </group>
 <group android:id="@+id/b">
     <item
             android:id="@+id/menu_item_settings"
             android:checkable="true"
+            android:icon="@drawable/settings"
             android:title="Settings"/>
   <item
             android:id="@+id/menu_item_logout"
             android:checkable="true"
+            android:icon="@drawable/logout_icon"
             android:title="Log out"/>
 
 </group>

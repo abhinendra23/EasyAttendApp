@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/bkcolor"
     tools:context=".view.activity.AddStudentActivity">
 
     <androidx.appcompat.widget.Toolbar
@@ -14,115 +15,173 @@
         app:titleTextColor="@color/colorWhite"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
-
-    <LinearLayout
-        android:padding="17dp"
-        android:orientation="vertical"
-        android:gravity="center"
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <com.google.android.material.textfield.TextInputLayout
-
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_height="170dp"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="10dp"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
 
-            <EditText
-                android:id="@+id/addStudentName"
+            <ImageView
+                android:id="@+id/imageView"
                 android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/add_person" />
+
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:drawableTint="@color/colorPrimary"
-                android:hint="Student Name"
-                android:inputType="text" />
-        </com.google.android.material.textfield.TextInputLayout>
-        <com.google.android.material.textfield.TextInputLayout
-        android:layout_marginTop="10dp"
-
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <EditText
-            android:drawableTint="@color/colorPrimary"
-            android:id="@+id/addStudentEmail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Email"
-            android:inputType="textEmailAddress" />
-    </com.google.android.material.textfield.TextInputLayout>
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_marginTop="10dp"
-
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <EditText
-                android:drawableTint="@color/colorPrimary"
-                android:id="@+id/addStudentPhone"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Phone"
-                android:inputType="number" />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:fontFamily="@font/anonymous_pro"
+                android:text="Add A Student "
+                android:textSize="19sp"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView"
+                app:layout_constraintVertical_bias="1.0"></TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-        <Spinner
-            android:backgroundTint="@color/colorPrimary"
-            android:id="@+id/addStudentSemester"
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+    </androidx.cardview.widget.CardView>
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <LinearLayout
+           android:padding="17dp"
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <com.google.android.material.textfield.TextInputLayout
+
+               style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <EditText
+                   android:id="@+id/addStudentName"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:drawableTint="@color/colorPrimary"
+                   android:hint="Student Name"
+                   android:inputType="text" />
+           </com.google.android.material.textfield.TextInputLayout>
+           <com.google.android.material.textfield.TextInputLayout
+               android:layout_marginTop="10dp"
+
+               style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <EditText
+                   android:drawableTint="@color/colorPrimary"
+                   android:id="@+id/addStudentEmail"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="Email"
+                   android:inputType="textEmailAddress" />
+           </com.google.android.material.textfield.TextInputLayout>
+           <com.google.android.material.textfield.TextInputLayout
+               android:layout_marginTop="10dp"
+
+               style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <EditText
+                   android:drawableTint="@color/colorPrimary"
+                   android:id="@+id/addStudentPhone"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="Phone"
+                   android:inputType="number" />
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <LinearLayout
+
+               android:layout_marginTop="10dp"
+               android:background="@drawable/shape_border"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <Spinner
+                   android:backgroundTint="@color/colorPrimary"
+                   android:id="@+id/addStudentSemester"
+                   android:layout_marginTop="10dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
 
 
-        </Spinner>
-        <Spinner
-            android:backgroundTint="@color/colorPrimary"
-            android:id="@+id/addStudentYear"
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+               </Spinner>
+           </LinearLayout>
+           <LinearLayout
+
+               android:layout_marginTop="10dp"
+               android:background="@drawable/shape_border"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <Spinner
+                   android:backgroundTint="@color/colorPrimary"
+                   android:id="@+id/addStudentYear"
+                   android:layout_marginTop="10dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
 
 
-        </Spinner>
+               </Spinner>
+           </LinearLayout>
 
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_marginTop="10dp"
+           <com.google.android.material.textfield.TextInputLayout
+               android:layout_marginTop="10dp"
 
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <EditText
-                android:drawableTint="@color/colorPrimary"
-                android:id="@+id/addStudentID"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="ID"
-                android:inputType="text" />
-        </com.google.android.material.textfield.TextInputLayout>
+               style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <EditText
+                   android:drawableTint="@color/colorPrimary"
+                   android:id="@+id/addStudentID"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="ID"
+                   android:inputType="text" />
+           </com.google.android.material.textfield.TextInputLayout>
+           <LinearLayout
 
-        <Spinner
+               android:layout_marginTop="5dp"
+               android:background="@drawable/shape_border"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
 
-            android:backgroundTint="@color/colorPrimary"
-            android:id="@+id/addStudentCourse"
-            android:layout_marginTop="15dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+               <Spinner
 
-
-        </Spinner>
-
-        <Button
-            android:id="@+id/addStudentBtn"
-            android:textColor="@color/colorWhite"
-            android:text="Add student"
-            android:background="@drawable/shape_gradient_button"
-            android:layout_marginTop="20dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+                   android:backgroundTint="@color/colorPrimary"
+                   android:id="@+id/addStudentCourse"
+                   android:layout_marginTop="5dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
 
 
+               </Spinner>
+           </LinearLayout>
+
+           <Button
+               android:id="@+id/addStudentBtn"
+               android:textColor="@color/colorWhite"
+               android:text="Add student"
+               android:background="@drawable/shape_gradient_button"
+               android:layout_marginTop="20dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
 
 
-    </LinearLayout>
+
+
+       </LinearLayout>
+   </ScrollView>
+
 
 </LinearLayout>

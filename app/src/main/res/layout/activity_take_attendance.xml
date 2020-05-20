@@ -23,7 +23,9 @@
            android:id="@+id/tARv"
            android:layout_above="@+id/submitbtn"
            android:layout_width="match_parent"
-           android:layout_height="match_parent"/>
+           android:layout_height="match_parent"
+           android:clipToPadding="false"
+           />
 
         <Button
             android:id="@+id/submitbtn"

@@ -5,6 +5,7 @@
     android:id="@+id/admin_nav_drawer_id"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bkcolor"
     android:orientation="vertical"
     tools:context=".view.activity.AdminActivity">
 
@@ -35,8 +36,8 @@
 
 
     <com.google.android.material.navigation.NavigationView
-        app:itemIconTint="@color/colorWhite"
         android:id="@+id/admin_nav_view_id"
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="start"

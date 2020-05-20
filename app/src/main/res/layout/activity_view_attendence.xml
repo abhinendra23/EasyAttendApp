@@ -7,7 +7,7 @@
     android:orientation="vertical"
     tools:context=".view.activity.ViewAttendenceActivity">
 
-    <com.google.android.material.textfield.TextInputLayout
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         app:title="View Attendance"
         app:titleTextColor="@color/colorWhite"
