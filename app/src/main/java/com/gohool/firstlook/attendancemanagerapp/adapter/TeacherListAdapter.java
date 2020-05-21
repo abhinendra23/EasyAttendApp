@@ -33,7 +33,7 @@ public class TeacherListAdapter extends RecyclerView.Adapter<TeacherListAdapter.
     @Override
     public TeacherListViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         LayoutInflater layoutInflater= LayoutInflater.from(context);
-        View view=layoutInflater.inflate(R.layout.single_student_layout,viewGroup,false);
+        View view=layoutInflater.inflate(R.layout.single_teacher_layout,viewGroup,false);
         return new TeacherListViewHolder(view);
     }
 

@@ -32,7 +32,7 @@
                 <ImageView
                     android:layout_width="70dp"
                     android:layout_height="70dp"
-                    android:src="@drawable/profilepicdemo"
+                    android:src="@drawable/coursepic"
                     ></ImageView>
                 <LinearLayout
                     android:padding="2dp"
@@ -74,7 +74,7 @@
                             android:layout_height="wrap_content"
                             android:textColor="#000"
                             android:fontFamily="@font/anonymous_pro"
-                            android:text="Student Id :-"
+                            android:text="Teacher :-"
                             android:textAlignment="center"
                             />
                         <TextView
@@ -103,7 +103,7 @@
                             android:textColor="#000"
                             android:fontFamily="@font/anonymous_pro"
                             android:layout_height="wrap_content" android:gravity="center"
-                            android:text="Courses:-"
+                            android:text="Course Id:-"
                             android:textAlignment="center"
                             />
                         <TextView
@@ -113,7 +113,7 @@
                             android:layout_width="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:layout_height="wrap_content"
-                           android:textColor="@color/colorPrimary"
+                            android:textColor="@color/colorPrimary"
                             android:text="Address"
                             android:textAlignment="center"
                             />

@@ -19,6 +19,7 @@ import com.gohool.firstlook.attendancemanagerapp.model.Course;
 import com.gohool.firstlook.attendancemanagerapp.model.Teacher;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -43,6 +44,7 @@ public class AddCourseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        FirebaseApp.initializeApp(this);
         setContentView(R.layout.activity_add_course);
         Toolbar toolbar=findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

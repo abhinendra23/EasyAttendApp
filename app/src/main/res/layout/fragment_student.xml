@@ -2,74 +2,186 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:gravity="center"
+
     android:padding="17dp"
     android:layout_height="match_parent"
     tools:context=".view.fragment.StudentFragment">
 
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="5dp">
 
-    <LinearLayout
-       android:gravity="center"
-        android:orientation="vertical"
-        android:background="#EEF0FA"
+        <ImageView
+            android:layout_width="228dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/student"></ImageView>
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView
+        android:backgroundTint="#EEF0FA"
         android:layout_width="match_parent"
+        app:strokeWidth="1dp"
+        app:strokeColor="#444343"
         android:layout_height="200dp">
+        <LinearLayout
 
-        <TextView
-            android:textStyle="bold"
-            android:id="@+id/StudentName"
-            android:layout_marginTop="10dp"
-            android:textColor="@color/colorPrimary"
-            android:textSize="19sp"
-            android:textAlignment="center"
-            android:text="Name"
+            android:orientation="vertical"
+            android:padding="20dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-        <TextView
-            android:id="@+id/StudentId"
-            android:layout_marginTop="10dp"
-            android:textColor="@color/colorPrimary"
-            android:textSize="17sp"
-            android:textAlignment="center"
-            android:text="Student ID"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-        <TextView
-            android:id="@+id/StudentDept"
-            android:layout_marginTop="10dp"
-            android:textColor="@color/colorPrimary"
-            android:textSize="17sp"
-            android:textAlignment="center"
-            android:text="Department"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-        <TextView
-            android:id="@+id/StudentShift"
-            android:layout_marginTop="10dp"
-            android:textColor="@color/colorPrimary"
-            android:textSize="17sp"
-            android:textAlignment="center"
-            android:text="Shift"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:id="@+id/teacherInfoName1"
+                    android:fontFamily="@font/anonymous_pro"
+                    android:textSize="19sp"
+                    android:text="Name:-"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
 
-        <TextView
-            android:id="@+id/StudentBatch"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Name"
-            android:textAlignment="center"
-            android:textSize="17sp">
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/StudentName"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="19sp"
+                    android:text="Name"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/anonymous_pro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/teacherInfoId1"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/anonymous_pro"
+                    android:textSize="17sp"
+                    android:textColor="#000"
+                    android:text="Student ID:-"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/StudentId"
+                    android:fontFamily="@font/anonymous_pro"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="17sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Student ID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
 
 
-        </TextView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/teacherInfoDept1"
+                    android:fontFamily="@font/anonymous_pro"
+                    android:textAlignment="center"
+                    android:textSize="17sp"
+                    android:textColor="#000"
+                    android:text="Department:-"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/StudentDept"
+                 android:layout_marginTop="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/anonymous_pro"
+                    android:text="Department"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/teacherShiftDept1"
+                    android:textAlignment="center"
+                    android:textSize="17sp"
+                    android:textColor="#000"
+                    android:text="Shift:-"
+                    android:fontFamily="@font/anonymous_pro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/StudentShift"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="17sp"
+                   android:layout_marginLeft="10dp"
+                    android:text="Shift"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/StudentBatch1"
+                    android:textAlignment="center"
+                    android:textSize="17sp"
+                    android:textColor="#000"
+                    android:text="Batch:-"
+                    android:fontFamily="@font/anonymous_pro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:id="@+id/StudentBatch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Name"
+
+                    android:textSize="17sp">
+
+
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
 
 
 
-
-    </LinearLayout>
 
 
     <LinearLayout
@@ -78,16 +190,24 @@
         android:background="#EEF0FA"
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
+        android:orientation="horizontal"
         android:layout_height="50dp">
 
-
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/search"
+            android:layout_marginLeft="40dp"
+            ></ImageView>
         <TextView
-            android:textSize="18sp"
-            android:textColor="@color/colorPrimary"
-            android:textAlignment="center"
+            android:textSize="22sp"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/anonymous_pro"
+            android:gravity="center_vertical"
             android:text="View Attendance"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="match_parent"/>
 
 
 
