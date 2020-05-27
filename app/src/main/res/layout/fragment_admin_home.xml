@@ -13,7 +13,7 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_weight="2"
+        android:layout_weight="1.7"
         >
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
@@ -80,9 +80,9 @@
 
 
 
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="70dp"
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
                         android:src="@drawable/student"
 
                         />
@@ -101,6 +101,7 @@
                         android:layout_marginTop="5dp"
                         android:text="Student List"
                         android:textColor="@color/colorPrimaryDark"
+                        android:fontFamily="@font/gfs_didot"
                         android:textSize="15sp" />
 
 
@@ -135,9 +136,9 @@
                     android:layout_height="match_parent">
 
 
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="70dp"
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
                         android:src="@drawable/teacher"
 
                         />
@@ -154,6 +155,7 @@
                         android:textSize="15sp"
                         android:layout_marginTop="5dp"
                         android:text="Teacher List"
+                        android:fontFamily="@font/gfs_didot"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
@@ -170,7 +172,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="5dp"
         android:weightSum="1"
         android:layout_weight="1.5"
         android:layout_width="match_parent"
@@ -199,11 +201,10 @@
                     android:layout_height="match_parent">
 
 
-                    <ImageView
+                    <de.hdodenhof.circleimageview.CircleImageView
                         android:src="@drawable/course"
-                        android:layout_width="80dp"
-                        android:layout_height="70dp"
-
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
                         />
 
                   <!--  <LinearLayout
@@ -220,6 +221,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
+                        android:fontFamily="@font/gfs_didot"
                         android:text="Course List" />
 
 

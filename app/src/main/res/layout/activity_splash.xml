@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#8AC548"
+
     tools:context=".view.activity.SplashActivity">
 
     <TextView
@@ -15,38 +15,39 @@
         android:gravity="center"
         android:text="EASYATTEND"
         android:textSize="40dp"
+        android:textColor="#8AC548"
         app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.445"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"></TextView>
+        app:layout_constraintVertical_bias="0.854"></TextView>
 
-    <ImageView
+    <pl.droidsonroids.gif.GifImageView
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:src="@drawable/attendance"
+        android:layout_height="300dp"
+        android:src="@drawable/attendgif"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.362"></ImageView>
+        app:layout_constraintVertical_bias="0.362"></pl.droidsonroids.gif.GifImageView>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/luckiest_guy"
-        android:text="An App \nfor Mobile Attendance"
         android:gravity="center"
+        android:textColor="#8AC548"
+        android:text="An App \nfor Mobile Attendance"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.243">
+        app:layout_constraintVertical_bias="0.154">
 
     </TextView>
 

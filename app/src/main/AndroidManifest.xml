@@ -6,9 +6,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/viewattendance"
+        android:icon="@drawable/attendance"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/viewattendance"
+        android:roundIcon="@drawable/attendance"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".view.activity.ViewAttendanceList"></activity>

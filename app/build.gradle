@@ -53,5 +53,10 @@ dependencies {
     // FirebaseUI for Cloud Storage
     implementation 'com.firebaseui:firebase-ui-storage:6.2.1'
 
+
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
+
+    implementation 'com.mikhaellopez:circularimageview:4.2.0'
+
 }
 apply plugin: 'com.google.gms.google-services'

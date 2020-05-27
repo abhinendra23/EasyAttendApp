@@ -44,8 +44,9 @@
             android:id="@+id/adminCard"
             android:layout_marginRight="10dp"
             android:layout_width="140dp"
-
-            android:layout_height="140dp">
+            app:strokeColor="#585656"
+            app:strokeWidth="1dp"
+            android:layout_height="match_parent">
 
             <LinearLayout
                 android:padding="5dp"
@@ -54,9 +55,10 @@
                 android:gravity="center"
                 android:orientation="vertical">
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
+
                     android:src="@drawable/admin2"
                      />
 
@@ -81,6 +83,8 @@
 
             android:layout_width="140dp"
             android:layout_marginLeft="10dp"
+            app:strokeColor="#585656"
+            app:strokeWidth="1dp"
             android:layout_height="140dp">
 
             <LinearLayout
@@ -90,11 +94,10 @@
                 android:gravity="center"
                 android:orientation="vertical">
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
-
-                    android:src="@drawable/teacher" />
+                    android:src="@drawable/teacherpic" />
 
 
 
@@ -117,13 +120,16 @@
     <LinearLayout
         android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
 
     <com.google.android.material.card.MaterialCardView
 
         android:id="@+id/studentCard"
+        app:strokeColor="#585656"
+        app:strokeWidth="1dp"
+        android:layout_gravity="center_vertical"
 
-        android:layout_marginTop="20dp"
         android:layout_width="140dp"
         android:layout_height="140dp">
 
@@ -134,7 +140,7 @@
             android:gravity="center"
             android:orientation="vertical">
 
-            <ImageView
+            <de.hdodenhof.circleimageview.CircleImageView
 
                 android:layout_width="match_parent"
                 android:layout_height="90dp"
