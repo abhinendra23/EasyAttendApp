@@ -1,1 +1,1 @@
-# AttendanceManagerApp
+EasyAttendApp
