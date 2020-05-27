@@ -31,5 +31,9 @@
 
 
     </style>
+    <style name = "radiostyle">
+        <item name="radioButtonStyle">@style/Widget.MaterialComponents.CompoundButton.RadioButton</item>
+    </style>
+
 
 </resources>

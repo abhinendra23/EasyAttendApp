@@ -64,23 +64,23 @@ public class ViewAttendanceAdapter extends RecyclerView.Adapter<ViewAttendanceAd
                         .child("Attendance").child(new SaveUser().getTeacher(context).getShift()).child(new SaveUser().teacher_CourseLoadData(context));
 
                 presentRef.addListenerForSingleValueEvent(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        presentList.clear();
-                        absentList.clear();
-                        if(dataSnapshot.exists()){
-                            for (DataSnapshot dataSnapshot1:dataSnapshot.getChildren()){
-                               for(DataSnapshot dataSnapshot2:dataSnapshot1.child("Present").getChildren()){
+                                    @Override
+                                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                                        presentList.clear();
+                                        absentList.clear();
+                                        if(dataSnapshot.exists()){
+                                            for (DataSnapshot dataSnapshot1:dataSnapshot.getChildren()){
+                                                for(DataSnapshot dataSnapshot2:dataSnapshot1.child("Present").getChildren()){
 
-                                       String key=dataSnapshot2.getKey();
-                                       if(viewAttendanceViewHolder.getAdapterPosition()!=-1){
-                                           if(key.equals(studentList.get(i).getId())){
-                                               presentList.add(key);
-                                       }
+                                                    String key=dataSnapshot2.getKey();
+                                                    if(viewAttendanceViewHolder.getAdapterPosition()!=-1){
+                                                        if(key.equals(studentList.get(i).getId())){
+                                                            presentList.add(key);
+                                                        }
 
 
-                                   }
-                                }
+                                                    }
+                                                }
 
                                 for(DataSnapshot dataSnapshot2:dataSnapshot1.child("Absent").getChildren()){
 

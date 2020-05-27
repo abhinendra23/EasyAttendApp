@@ -6,11 +6,12 @@ import android.view.View;
 import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import com.gohool.firstlook.attendancemanagerapp.R;
 
 public class MainActivity extends AppCompatActivity {
-    private LinearLayout adminCard,teacherCard,studentCard;
+    private CardView adminCard,teacherCard,studentCard;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

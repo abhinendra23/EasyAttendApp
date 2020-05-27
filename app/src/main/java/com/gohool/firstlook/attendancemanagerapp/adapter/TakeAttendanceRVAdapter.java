@@ -45,7 +45,7 @@ public class TakeAttendanceRVAdapter extends RecyclerView.Adapter<TakeAttendance
     @Override
     public void onBindViewHolder(@NonNull final TakeAttendanceRVViewHolder takeAttendanceRVViewHolder, final int i) {
         takeAttendanceRVViewHolder.Student_name.setText(studentList.get(takeAttendanceRVViewHolder.getAdapterPosition()).getName());
-        takeAttendanceRVViewHolder.Student_Id.setText(studentList.get(takeAttendanceRVViewHolder.getAdapterPosition()).getId());
+        takeAttendanceRVViewHolder.Student_Id.setText(studentList.get(takeAttendanceRVViewHolder.getAdapterPosition()).getEmail());
 
         takeAttendanceRVViewHolder.presentRBtn.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override

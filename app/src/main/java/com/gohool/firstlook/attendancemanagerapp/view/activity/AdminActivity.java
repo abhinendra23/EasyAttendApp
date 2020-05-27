@@ -3,6 +3,7 @@ package com.gohool.firstlook.attendancemanagerapp.view.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -19,6 +20,7 @@ public class AdminActivity extends AppCompatActivity {
     private NavigationView admin_nav_view;
     private DrawerLayout admin_nav_drawer;
     private Toolbar admin_toolbar;
+    private TextView name,email;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -27,11 +29,14 @@ public class AdminActivity extends AppCompatActivity {
         admin_toolbar=findViewById(R.id.admin_toolbar_id);
         setSupportActionBar(admin_toolbar);
 
+        name=findViewById(R.id.header_name);
+        email=findViewById(R.id.header_email);
         admin_nav_drawer=findViewById(R.id.admin_nav_drawer_id);
         admin_nav_view=findViewById(R.id.admin_nav_view_id);
         admin_nav_view.setItemIconTintList(null);
 
         ActionBarDrawerToggle actionBarDrawerToggle = new ActionBarDrawerToggle(this, admin_nav_drawer, admin_toolbar,R.string.nav_drawer_open, R.string.nav_drawer_close);
+
 
         admin_nav_drawer.addDrawerListener(actionBarDrawerToggle);
         actionBarDrawerToggle.syncState();

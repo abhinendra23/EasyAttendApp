@@ -37,7 +37,7 @@ public class StudentActivity extends AppCompatActivity {
 
         student_nav_drawer =findViewById(R.id.student_nav_drawer_id);
         student_nav_view =findViewById(R.id.student_nav_view_id);
-
+        student_nav_view.setItemIconTintList(null);
         ActionBarDrawerToggle actionBarDrawerToggle = new ActionBarDrawerToggle(this, student_nav_drawer, student_toolbar,R.string.nav_drawer_open, R.string.nav_drawer_close);
 
         student_nav_drawer.addDrawerListener(actionBarDrawerToggle);

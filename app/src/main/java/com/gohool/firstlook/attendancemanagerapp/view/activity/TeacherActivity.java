@@ -37,6 +37,7 @@ public class TeacherActivity extends AppCompatActivity {
 
         teacher_nav_drawer =findViewById(R.id.teacher_nav_drawer_id);
         teacher_nav_view =findViewById(R.id.teacher_nav_view_id);
+        teacher_nav_view.setItemIconTintList(null);
 
         ActionBarDrawerToggle actionBarDrawerToggle = new ActionBarDrawerToggle(this, teacher_nav_drawer, teacher_toolbar,R.string.nav_drawer_open, R.string.nav_drawer_close);
 

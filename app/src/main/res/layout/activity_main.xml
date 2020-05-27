@@ -5,19 +5,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
-    android:padding="20dp"
+    android:background="@color/bkcolor"
+    android:padding="10dp"
     tools:context=".view.activity.MainActivity">
 
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="10dp"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/selected_course"
+            />
+
+    </androidx.cardview.widget.CardView>
     <TextView
 
         android:textAlignment="center"
-        android:textColor="@color/colorPrimary"
+        android:textColor="#D38383"
         android:text="@string/account_type"
-        android:textSize="19sp"
+        android:fontFamily="@font/luckiest_guy"
+        android:textSize="22sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="20dp"
         />
 
 
@@ -26,7 +40,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <LinearLayout
+        <com.google.android.material.card.MaterialCardView
             android:id="@+id/adminCard"
             android:layout_marginRight="10dp"
             android:layout_width="140dp"
@@ -41,11 +55,9 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:padding="10dp"
-                    android:background="@drawable/ovalsahpe"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:src="@drawable/admin1"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/admin2"
                      />
 
 
@@ -55,15 +67,16 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:text="Admin"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="#000"
+                    android:fontFamily="@font/gfs_didot"
                     android:textSize="17sp" />
 
 
             </LinearLayout>
 
-        </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
 
-        <LinearLayout
+        <com.google.android.material.card.MaterialCardView
             android:id="@+id/teacherCard"
 
             android:layout_width="140dp"
@@ -78,10 +91,9 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:background="@drawable/ovalsahpe"
-                    android:padding="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+
                     android:src="@drawable/teacher" />
 
 
@@ -91,18 +103,23 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:text="Teacher"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="#000"
+                    android:fontFamily="@font/gfs_didot"
                     android:textSize="17sp" />
 
 
             </LinearLayout>
 
-        </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
 
     </LinearLayout>
 
-
     <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
 
         android:id="@+id/studentCard"
 
@@ -118,10 +135,9 @@
             android:orientation="vertical">
 
             <ImageView
-                android:padding="10dp"
-                android:background="@drawable/ovalsahpe"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
                 android:src="@drawable/student" />
 
 
@@ -131,11 +147,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="Student"
-                android:textColor="@color/colorPrimary"
+                android:textColor="#000"
+                android:fontFamily="@font/gfs_didot"
                 android:textSize="17sp" />
 
 
         </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
 
     </LinearLayout>
 
