@@ -56,7 +56,7 @@ public class SelectedCourse1Activity extends AppCompatActivity {
             public void onClick(View v) {
                 if(!selected_course.equals("Select course")){
                     new SaveUser().teacher_CourseSaveData(getApplicationContext(),selected_course);
-                    Intent intent=new Intent(SelectedCourse1Activity.this,ViewAttendenceActivity.class);
+                    Intent intent=new Intent(SelectedCourse1Activity.this,ViewByDate.class);
                     intent.putExtra("SC",selected_course);
                     startActivity(intent);
                 }

@@ -6,12 +6,13 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/attendance"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/attendance"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.activity.ViewAttendanceList"></activity>
+        <activity android:name=".view.activity.ViewByDate"></activity>
+        <activity android:name=".view.activity.ViewAttendanceList" />
         <activity android:name=".view.activity.ShowAttendanceActivity" />
         <activity android:name=".view.activity.StudentActivity" />
         <activity android:name=".view.activity.ViewAttendenceActivity" />

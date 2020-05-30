@@ -42,6 +42,7 @@ public class ViewAttendanceAdapter extends RecyclerView.Adapter<ViewAttendanceAd
 
     }
 
+
     @NonNull
     @Override
     public ViewAttendanceViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {

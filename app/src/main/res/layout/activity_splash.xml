@@ -18,10 +18,10 @@
         android:textSize="45sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.854"></TextView>
+        app:layout_constraintVertical_bias="0.855"></TextView>
 
     <pl.droidsonroids.gif.GifImageView
         android:id="@+id/imageView2"

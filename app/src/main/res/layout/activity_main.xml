@@ -25,10 +25,10 @@
     <TextView
 
         android:textAlignment="center"
-        android:textColor="#D38383"
+        android:textColor="@color/colorPrimary"
         android:text="@string/account_type"
         android:fontFamily="@font/luckiest_guy"
-        android:textSize="22sp"
+        android:textSize="25sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
@@ -37,6 +37,7 @@
 
     <LinearLayout
         android:gravity="center"
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -46,6 +47,7 @@
             android:layout_width="140dp"
             app:strokeColor="#585656"
             app:strokeWidth="1dp"
+            android:layout_marginEnd="25dp"
             android:layout_height="match_parent">
 
             <LinearLayout
@@ -121,7 +123,7 @@
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp">
+        android:layout_marginTop="35dp">
 
     <com.google.android.material.card.MaterialCardView
 
