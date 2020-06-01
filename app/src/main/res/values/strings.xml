@@ -79,12 +79,17 @@
     </string-array>
 
     //intro
-    <string name="intro_details">Manage teacher and student information\n
-        course allocation System\n
-        Take live Attendance
+    <string name="intro_details">Maintain teacher and student \n Information
+        by Storing them Into Database
     </string>
-    <string name="intro_contacts">Manage Teacher and Student information</string>
-    <string name="intro_blood_donation">Course Allocation System</string>
+    <string name="intro_details1">Allocate courses to Students and \n
+        Assign Courses to Teachers
+    </string>
+    <string name="intro_details2">Take Live Attendance through App\n
+        Hassle Free :)
+    </string>
+    <string name="intro_contacts">Maintain Teacher and Student Information</string>
+    <string name="intro_blood_donation">Course Allocation</string>
     <string name="intro_find_location">Take live Attendance</string>
 
 

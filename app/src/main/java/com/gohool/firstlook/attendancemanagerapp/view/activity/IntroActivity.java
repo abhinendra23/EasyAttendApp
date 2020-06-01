@@ -42,13 +42,16 @@ public class IntroActivity extends AppCompatActivity {
 
         final List<IntroContent> intro_content_list = new ArrayList<>();
         String intro_details = getResources().getString(R.string.intro_details);
+        String intro_details1 = getResources().getString(R.string.intro_details1);
+        String intro_details2 = getResources().getString(R.string.intro_details2);
+
         String intro_contacts = getResources().getString(R.string.intro_contacts);
         String intro_blood_donation = getResources().getString(R.string.intro_blood_donation);
         String intro_find_location = getResources().getString(R.string.intro_find_location);
 
         intro_content_list.add(new IntroContent(intro_contacts, intro_details, R.drawable.resume));
-        intro_content_list.add(new IntroContent(intro_blood_donation, intro_details, R.drawable.course_allo));
-        intro_content_list.add((new IntroContent(intro_find_location, intro_details, R.drawable.attendance_icon)));
+        intro_content_list.add(new IntroContent(intro_blood_donation, intro_details1, R.drawable.course_allo));
+        intro_content_list.add((new IntroContent(intro_find_location, intro_details2, R.drawable.mark_attendance)));
 
         introAdapter = new IntroAdapter(this, intro_content_list);
         intro_viewpager.setAdapter(introAdapter);
