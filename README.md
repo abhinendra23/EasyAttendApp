@@ -35,6 +35,11 @@ Take Live Attendance,Maintain Information of Teachers and Students,Allocate Cour
 [Navigation]:https://github.com/abhinendra23/AttendanceManagerApp/blob/master/screenshots/navigation.png
 [CourseList]:https://github.com/abhinendra23/AttendanceManagerApp/blob/master/screenshots/course_list.png
 [Addcourse]:https://github.com/abhinendra23/AttendanceManagerApp/blob/master/screenshots/add_course.png
+[Teacherdetail]:https://github.com/abhinendra23/AttendanceManagerApp/blob/master/screenshots/select_teacher_details.png
+[TeacherList]:https://github.com/abhinendra23/AttendanceManagerApp/blob/master/screenshots/teacher_list.png
+[Addteacher]:https://github.com/abhinendra23/AttendanceManagerApp/blob/master/screenshots/add_teacher.png
+[Teacher]:https://github.com/abhinendra23/AttendanceManagerApp/blob/master/screenshots/teacher_panel.png
+[TakeAttendance]:https://github.com/abhinendra23/AttendanceManagerApp/blob/master/screenshots/take_attendance.png
 
 
 | Animated Splash Screen | IntroSlider | Select Account Type| Admin Panel |
@@ -47,6 +52,10 @@ Take Live Attendance,Maintain Information of Teachers and Students,Allocate Cour
 
 | Select Course Details|View Course List | Add New Course | Select Teacher Details|
 |----------|----------|-------------|------------|
-|![alt][Coursedetail]|![alt][CourseList]|![alt][AddCourse]|![alt][Admin]|
+|![alt][Coursedetail]|![alt][CourseList]|![alt][AddCourse]|![alt][Teacherdetail]|
+
+| View Teacher List | Add New Teacher | Teacher Panel | Take Attendance |
+|----------|----------|-------------|------------|
+|![alt][TeacherList]|![alt][AddTeacher]|![alt][Teacher]|![alt][TakeAttendance]|
 
 
