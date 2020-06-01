@@ -9,7 +9,7 @@ Take Live Attendance,Maintain Information of Teachers and Students,Allocate Cour
 * BackEnd :Google Firebase
 * Min SDK : Android 5.0
 
-## Features
+## Salient Features
 
 * Animated Splash Screen.
 * Intro Slider to Introduce App.
@@ -58,4 +58,5 @@ Take Live Attendance,Maintain Information of Teachers and Students,Allocate Cour
 |----------|----------|-------------|------------|
 |![alt][TeacherList]|![alt][AddTeacher]|![alt][Teacher]|![alt][TakeAttendance]|
 
+#
 
