@@ -32,13 +32,21 @@ Take Live Attendance,Maintain Information of Teachers and Students,Allocate Cour
 [StudentList]:https://github.com/abhinendra23/AttendanceManagerApp/blob/master/screenshots/student_list.png
 [Addstudent]:https://github.com/abhinendra23/AttendanceManagerApp/blob/master/screenshots/add_student.png
 [Coursedetail]:https://github.com/abhinendra23/AttendanceManagerApp/blob/master/screenshots/select_course_details.png
+[Navigation]:https://github.com/abhinendra23/AttendanceManagerApp/blob/master/screenshots/navigation.png
+[CourseList]:https://github.com/abhinendra23/AttendanceManagerApp/blob/master/screenshots/course_list.png
+[Addcourse]:https://github.com/abhinendra23/AttendanceManagerApp/blob/master/screenshots/add_course.png
 
-|Animated Splash Screen | IntroSlider | Select Account Type| Admin Panel |
+
+| Animated Splash Screen | IntroSlider | Select Account Type| Admin Panel |
 |----------|----------|-------------|------------|
 |![alt][Splash]|![alt][Intro]|![alt][Account]|![alt][Admin]|
 
-|Select Student Details | View Student List | Add New Student| Select Course Details |
+| Stylish Navigation |Select Student Details | View Student List | Add New Student|
 |----------|----------|-------------|------------|
-|![alt][Studentdetail]|![alt][StudentList]|![alt][Addstudent]|![alt][Coursedetail]|
+|![alt][Navigation]|![alt][Studentdetail]|![alt][StudentList]|![alt][Addstudent]|
+
+| Select Course Details|View Course List | Add New Course | Select Teacher Details|
+|----------|----------|-------------|------------|
+|![alt][Coursedetail]|![alt][CourseList]|![alt][AddCourse]|![alt][Admin]|
 
 
